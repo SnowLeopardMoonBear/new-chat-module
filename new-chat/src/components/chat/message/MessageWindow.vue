@@ -1,4 +1,8 @@
 <template>
+<div>
+    <v-for key:
+</div>
+
 </template>
 <script>
 // import blah from 'blah'
@@ -7,7 +11,16 @@ import DfMessage from './DfMessage.vue';
 export default {
   components: {MyMessage, DfMessage},
   methods: {},
-  data() {},
+  data: function () {
+      return {
+          return {
+              feed: [{
+                  isDf: True,
+                  
+              }]
+          }
+      }
+  },
 };
 </script>
 <style scoped>
