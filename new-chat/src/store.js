@@ -5,7 +5,13 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state: {
         text: {
-
+            messageList: [
+                {
+                    is_DF: true,
+                    content: "안녕하세요, 함께하는 키오스크 키위입니다.",
+                    date: ""
+                }  
+            ]
         },
         style: {
             window__width: '100%',
