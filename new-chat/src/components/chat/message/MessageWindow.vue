@@ -2,8 +2,10 @@
 </template>
 <script>
 // import blah from 'blah'
+import MyMessage from './MyMessage.vue';
+import DfMessage from './DfMessage.vue';
 export default {
-  components: {},
+  components: {MyMessage, DfMessage},
   methods: {},
   data() {},
 };
