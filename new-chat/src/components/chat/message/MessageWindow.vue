@@ -3,8 +3,8 @@
   <div
     v-for="(message, index) in feed"
     :key="index">
-    <user-message v-if="message.isDf" :msg="message"/>
-    <df-message v-if="!message.isDF" :msg="message"/>
+    <user-message v-if="message.is_DF" :msg="message"/>
+    <df-message v-if="!message.is_DF" :msg="message"/>
 </div>
 <div>
 

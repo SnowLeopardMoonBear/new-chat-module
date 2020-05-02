@@ -1,23 +1,22 @@
 <script>
 export default {
-    methods: {
-        sendMessage() {
-            if (inputText === ''){
-                return
-            }
-            return this.$store.commit("sendMsg", {inputText})
-        }
+  methods: {
+    sendMessage() {
+      if (inputText === "") {
+        return;
+      }
+      return this.$store.commit("sendMsg", { inputText });
     },
-    data: () => {
-        return {
-            inputText: ''
-        }
-    }
+  },
+  data: () => {
+    return {
+      inputText: "",
+    };
+  },
 };
 </script>
 <template>
-<div>
+  <div>
     <!-- style은 v-bind:style="(var name)"과 같이-->
-</div>
-
+  </div>
 </template>

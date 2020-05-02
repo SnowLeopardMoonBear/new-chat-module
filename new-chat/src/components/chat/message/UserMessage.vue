@@ -1,12 +1,11 @@
 <template>
-<div>
-    {{msg.content}}
-</div>
+  <div>
+    {{ msg.content }}
+  </div>
 </template>
 <script>
 export default {
-    props: [msg]
-}
+  props: [msg],
+};
 </script>
-<style scoped>
-</style>
+<style scoped></style>

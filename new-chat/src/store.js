@@ -11,6 +11,10 @@ export const store = new Vuex.Store({
           content: "안녕하세요, 함께하는 키오스크 키위입니다.",
           date: "",
         },
+        {
+          is_DF: false,
+          content:"안녕하세요, 저는 유저 메시지 샘플입니다."
+        }
       ],
     },
     style: {
