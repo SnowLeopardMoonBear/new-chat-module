@@ -10,7 +10,6 @@
 
 </template>
 <script>
-// import blah from 'blah'
 // props 어떻게 전달하는지 다시 보기
 import MyMessage from './MyMessage.vue';
 import DfMessage from './DfMessage.vue';

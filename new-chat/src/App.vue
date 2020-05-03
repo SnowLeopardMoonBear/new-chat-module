@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <user-message />
+    <message-window />
     <input-bar />
   </div>
 </template>
 
 <script>
-import UserMessage from "./components/chat/message/UserMessage.vue";
+import MessageWindow from "./components/chat/message/MessageWindow.vue";
 import InputBar from "./components/chat/input/InputBar.vue";
 
 export default {
   name: "App",
   components: {
-    UserMessage, InputBar
+    MessageWindow, InputBar
   },
 };
 </script>
