@@ -11,7 +11,7 @@
 </template>
 <script>
 // props 어떻게 전달하는지 다시 보기
-import MyMessage from './MyMessage.vue';
+import UserMessage from './UserMessage.vue';
 import DfMessage from './DfMessage.vue';
 export default {
   components: {UserMessage, DfMessage},
