@@ -5,8 +5,8 @@
     :key="index">
     <user-message v-if="message.is_DF" :msg="message"/>
     <df-message v-if="!message.is_DF" :msg="message"/>
+  </div>
 </div>
-<div>
 
 </template>
 <script>
