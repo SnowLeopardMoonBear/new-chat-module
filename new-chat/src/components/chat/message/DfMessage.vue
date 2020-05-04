@@ -1,11 +1,18 @@
 <template>
-  <div>
+<div>
+  <span id="df-message">
     {{ msg.content }}
-  </div>
+  </span><br>
+</div>
 </template>
 <script>
 export default {
   props: ['msg'],
 };
 </script>
-<style scoped></style>
+<style scoped>
+#df-message{
+    color:blue;
+    float:left;
+    }
+</style>

@@ -1,7 +1,9 @@
 <template>
-  <div id="user-message">
+<div>
+  <span id="user-message">
     {{ msg.content }}
-  </div>
+  </span><br>
+</div>
 </template>
 <script>
 export default {
@@ -11,6 +13,6 @@ export default {
 <style scoped>
 #user-message{
     color: red;
-    text-align: right;
+    float: right;
 };
 </style>

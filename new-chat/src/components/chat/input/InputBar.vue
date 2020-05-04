@@ -2,15 +2,16 @@
 export default {
   methods: {
     sendMessage() {
-      if (inputText === "") {
+      if (inputText === '') {
         return;
       }
-      return this.$store.commit("sendMsg", { inputText });
+      this.$store.commit("sendMsg", { inputText });
+      inputText = '';
     },
   },
   data: () => {
     return {
-      inputText: "",
+      inputText: '',
     };
   },
 };
