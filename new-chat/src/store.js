@@ -9,25 +9,21 @@ export const store = new Vuex.Store({
         {
           is_DF: true,
           content: "안녕하세요, 함께하는 키오스크 키위입니다.",
-          date: "",
         },
         {
           is_DF: false,
           content:"안녕하세요, 저는 유저 메시지 샘플입니다."
+        },
+        {
+          is_DF: false,
+          content:"안녕하세요, 저는 어나더 유저 메시지 샘플입니다."
         }
       ],
     },
-    style: {
-      window__width: "100%",
-      window__height: "50%",
-      window__color: "green",
-      text__size: "100%",
-    }, // just an example
+    style: {}
   },
   getters: {
-    chatStyle: function(state) {
-      return `width=${state.style.window__width};height=${window__height};`;
-    },
+
   },
   mutations: {},
 });

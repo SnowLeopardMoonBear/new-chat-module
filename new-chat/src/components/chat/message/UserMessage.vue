@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="user-message">
     {{ msg.content }}
   </div>
 </template>
@@ -8,4 +8,9 @@ export default {
   props: ['msg'],
 };
 </script>
-<style scoped></style>
+<style scoped>
+#user-message{
+    color: red;
+    text-align: right;
+};
+</style>
