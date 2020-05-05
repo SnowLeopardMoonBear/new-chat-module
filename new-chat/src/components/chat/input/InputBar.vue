@@ -1,7 +1,11 @@
 <template>
   <div>
-    <input class="message-input" placeholder="메시지를 입력해주세요"/>
-    <button @click="sendMessage"/>
+    <form @submit.prevent="sendMessage"
+      class="message-input"
+    >
+      <input type="text" v-model="inputText" placeholder="메시지를 입력해주세요">
+      <button>보내기</button>
+    </form>
     <!-- style은 v-bind:style="(var name)"과 같이-->
   </div>
 </template>
@@ -10,15 +14,18 @@
 export default {
   methods: {
     alertMessage() {
-      window.alert('test success!');
+      window.alert("test success!");
     },
     sendMessage() {
-      this.$store.commit('pushMessage', {
+      if (this.inputText !== "") {
+        this.$store.commit("pushMessage", {
           is_DF: false,
-          content: "안녕하세요, 유저로부터 push된 메시지입니다.",
+          content: this.inputText,
         });
-    }
-  
+        this.inputText="";
+      }
+    },
+
     // sendMessage() {
     //   if (inputText === '') {
     //     return;
@@ -29,7 +36,7 @@ export default {
   },
   data: () => {
     return {
-      inputText: '',
+      inputText: "",
     };
   },
 };
