@@ -6,6 +6,7 @@
     <user-message v-if="!message.is_DF" :msg="message"/>
     <df-message v-if="message.is_DF" :msg="message"/>
   </div>
+  <br>
 </div>
 
 </template>
@@ -27,7 +28,7 @@ export default {
     float: center;
     width: 50%;
     height: 500px;
-    background-color: #f3efef;
+    background-color: #f8f6f6;
     border-radius: 10px;
 }
 </style>
