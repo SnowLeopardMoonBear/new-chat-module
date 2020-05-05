@@ -1,7 +1,10 @@
 <template>
+<div>
   <p id="df-message">
     {{ msg.content }} <span class="time">{{ msg.time }}</span>
   </p>
+  <div/>
+</div>
 </template>
 <script>
 export default {

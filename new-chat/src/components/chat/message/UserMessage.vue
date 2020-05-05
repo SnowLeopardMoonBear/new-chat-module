@@ -1,7 +1,10 @@
 <template>
+<div>
   <p id="user-message">
     <span class="time">{{ msg.time}}</span> {{ msg.content }} 
   </p>
+  <div/>
+</div>
 </template>
 <script>
 export default {

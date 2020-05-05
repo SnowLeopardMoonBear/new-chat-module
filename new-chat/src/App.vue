@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="app" id="app">
     <message-window />
     <input-bar />
   </div>
@@ -12,7 +12,8 @@ import InputBar from "./components/chat/input/InputBar.vue";
 export default {
   name: "App",
   components: {
-    MessageWindow, InputBar
+    MessageWindow,
+    InputBar,
   },
 };
 </script>
@@ -24,9 +25,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
 }
-.time{
+#app {
+  /* my code */
+  float: center;
+  width: 50%;
+  height: 500px;
+  background-color: #f8f6f6;
+  border-radius: 10px;
+}
+.time {
   font-size: 10px;
 }
 </style>

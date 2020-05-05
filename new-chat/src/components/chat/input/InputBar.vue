@@ -52,7 +52,8 @@ export default {
 };
 </script>
 <style>
-.send-button{width:10%}
-.input{width:40%}
+.input-bar{margin:1%; float: center; background-color: rgb(68, 240, 68); border-radius:5px;}
+.send-button{width:15%; float:center}
+.input{width:80%; margin:1%; float:center; border-radius: 3px;}
 
 </style>
