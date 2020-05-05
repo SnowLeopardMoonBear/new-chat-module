@@ -1,12 +1,11 @@
 <template>
-<div>
+<div class="message-window">
   <div
     v-for="(message, index) in feed"
     :key="index">
     <user-message v-if="!message.is_DF" :msg="message"/>
     <df-message v-if="message.is_DF" :msg="message"/>
   </div>
-  
 </div>
 
 </template>
@@ -24,5 +23,11 @@ export default {
 };
 </script>
 <style>
-
+.message-window{
+    float: center;
+    width: 50%;
+    height: 500px;
+    background-color: #f3efef;
+    border-radius: 10px;
+}
 </style>

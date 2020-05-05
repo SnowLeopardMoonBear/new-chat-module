@@ -1,3 +1,9 @@
+<template>
+  <div>
+    <!-- style은 v-bind:style="(var name)"과 같이-->
+  </div>
+</template>
+
 <script>
 export default {
   methods: {
@@ -16,8 +22,3 @@ export default {
   },
 };
 </script>
-<template>
-  <div>
-    <!-- style은 v-bind:style="(var name)"과 같이-->
-  </div>
-</template>

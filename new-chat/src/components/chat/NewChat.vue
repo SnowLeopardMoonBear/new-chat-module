@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='chat-module'>
     <message-window />
     <input-bar />
   </div>
@@ -11,4 +11,8 @@ export default {
   components: { MessageWindow, InputBar },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.chat-module{
+    height: 50%;
+}
+</style>

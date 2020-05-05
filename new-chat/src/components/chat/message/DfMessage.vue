@@ -12,7 +12,11 @@ export default {
 </script>
 <style scoped>
 #df-message{
-    color:blue;
+    color: rgb(187, 187, 187);
     float:left;
+    border-radius: 5px;
+    background-color:rgb(255, 253, 112);
+    margin-top: 5px;
+    margin-left: 5px;
     }
 </style>
