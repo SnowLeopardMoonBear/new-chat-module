@@ -15,6 +15,7 @@ export default {
   background-color: rgb(143, 243, 129);
   border-radius: 5px;
   margin-top: 5px;
+  margin-left: 5px;
   margin-right: 5px;
 }
 </style>
