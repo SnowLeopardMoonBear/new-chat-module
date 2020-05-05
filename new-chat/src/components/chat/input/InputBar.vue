@@ -1,13 +1,14 @@
 <template>
   <div class="input-bar">
-    <form @submit.prevent="sendMessage" class="message-input">
-      <input class="input"
+    <div class="message-input">
+      <input
+        class="input"
         type="text"
         v-model="inputText"
         placeholder="메시지를 입력해주세요"
       />
-      <button class="send-button">보내기</button>
-    </form>
+      <div class="send-button" @click="sendMessage()">보내기</div>
+    </div>
     <!-- style은 v-bind:style="(var name)"과 같이-->
   </div>
 </template>
@@ -30,7 +31,7 @@ export default {
         this.$store.commit("pushMessage", {
           is_DF: false,
           content: this.inputText,
-          time: this.getCurrentTime()
+          time: this.getCurrentTime(),
         });
         this.inputText = "";
       }
@@ -52,8 +53,27 @@ export default {
 };
 </script>
 <style>
-.input-bar{margin:1%; float: center; background-color: rgb(68, 240, 68); border-radius:5px;}
-.send-button{width:15%; float:center}
-.input{width:80%; margin:1%; float:center; border-radius: 3px;}
-
+.input-bar {
+  margin: 1%;
+  float: center;
+  background-color: rgba(68, 240, 68, 0.795);
+  border-radius: 5px;
+}
+.send-button {
+  width: 15%;
+  height: 6%;
+  border-radius: 5px;
+  font-size: 12px;
+  float: center;
+  font-weight: bolder;
+  background-color: #6c9afd;
+  color: white;
+  text-align: center;
+}
+.input {
+  width: 80%;
+  margin: 1%;
+  float: center;
+  border-radius: 3px;
+}
 </style>
