@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="input-bar">
     <form @submit.prevent="sendMessage" class="message-input">
-      <input
+      <input class="input"
         type="text"
         v-model="inputText"
         placeholder="메시지를 입력해주세요"
       />
-      <button>보내기</button>
+      <button class="send-button">보내기</button>
     </form>
     <!-- style은 v-bind:style="(var name)"과 같이-->
   </div>
@@ -51,3 +51,8 @@ export default {
   },
 };
 </script>
+<style>
+.send-button{width:10%}
+.input{width:40%}
+
+</style>
