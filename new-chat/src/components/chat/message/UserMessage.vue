@@ -10,12 +10,13 @@ export default {
 </script>
 <style scoped>
 #user-message {
-  color: rgb(163, 163, 163);
+  color: rgb(85, 85, 85);
   float: right;
   background-color: rgb(143, 243, 129);
   border-radius: 5px;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
+  padding: 3px;
 }
 </style>
