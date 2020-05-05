@@ -25,5 +25,9 @@ export const store = new Vuex.Store({
   getters: {
 
   },
-  mutations: {},
+  mutations: {
+    pushMessage: function (state, Message) {
+      return state.text.messageList.push(Message);
+    }
+  },
 });

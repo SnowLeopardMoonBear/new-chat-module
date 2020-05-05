@@ -11,7 +11,7 @@ export default {
   components: { MessageWindow, InputBar },
 };
 </script>
-<style scoped>
+<style>
 .chat-module{
     height: 50%;
 }

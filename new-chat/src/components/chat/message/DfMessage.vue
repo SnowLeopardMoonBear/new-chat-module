@@ -1,7 +1,7 @@
 <template>
-  <div id="df-message">
+  <p id="df-message">
     {{ msg.content }}
-  </div>
+  </p>
 </template>
 <script>
 export default {

@@ -1,7 +1,7 @@
 <template>
-  <div id="user-message">
+  <p id="user-message">
     {{ msg.content }}
-  </div>
+  </p>
 </template>
 <script>
 export default {
