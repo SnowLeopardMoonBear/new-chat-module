@@ -1,6 +1,6 @@
 <template>
   <p id="user-message">
-    {{ msg.content }}
+    <span class="time">{{ msg.time}}</span> {{ msg.content }} 
   </p>
 </template>
 <script>

@@ -1,6 +1,6 @@
 <template>
   <p id="df-message">
-    {{ msg.content }}
+    {{ msg.content }} <span class="time">{{ msg.time }}</span>
   </p>
 </template>
 <script>
