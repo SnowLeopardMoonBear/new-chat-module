@@ -55,6 +55,9 @@ export default {
 </script>
 <style>
 .input-bar {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   margin: 1%;
   float: center;
   background-color: rgba(68, 240, 68, 0.795);
@@ -65,7 +68,7 @@ export default {
   height: 6%;
   margin-top: 1.25%;
   margin-right: 1%;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 12px;
   float: right;
   font-weight: bolder;
