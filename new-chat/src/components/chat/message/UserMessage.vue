@@ -10,9 +10,11 @@ export default {
   props: ["msg"],
 };
 </script>
-<style scoped>
+<style>
 .user-message {
   color: rgb(85, 85, 85);
+  text-align:right;
+  width:50%;
   float: right;
   background-color: rgb(143, 243, 129);
   border-radius: 5px;
@@ -22,6 +24,6 @@ export default {
   padding: 3px;
 }
 .message-line{
-  width:100%;
+  /* width:100%; */
 }
 </style>

@@ -11,10 +11,15 @@ export default {
   props: ["msg"],
 };
 </script>
-<style scoped>
+<style>
+.message-line {
+    /* width:100%; */
+}
 .df-message {
   color: rgb(85, 85, 85);
-  float: left;
+  /* float: left; */
+  text-align:left;
+  width:50%;
   border-radius: 5px;
   background-color: rgb(255, 253, 112);
   margin-top: 5px;
