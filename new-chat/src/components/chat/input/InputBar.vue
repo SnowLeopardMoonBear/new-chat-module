@@ -25,8 +25,9 @@ export default {
       return `${hours > 9 ? `${hours}` : `0${hours}`}시 
       ${minutes > 9 ? `${minutes}` : `0${minutes}`}분`;
     },
-    alertMessage() {
-      window.alert("test success!");
+    sendChime() {
+      var chime = new Audio(require('../../../../public/chime.mp3'));
+      chime.play();
     },
     sendMessage() {
       if (this.inputText !== "") {
@@ -36,6 +37,7 @@ export default {
           time: this.getCurrentTime(),
         });
         this.inputText = "";
+        this.sendChime();
         scrollToBottom();
       }
     },
