@@ -29,7 +29,6 @@ export default {
 #app {
   /* my code */
   float: center;
-  width: 50%;
   height: 500px;
   background-color: #f8f6f6;
   border-radius: 10px;
