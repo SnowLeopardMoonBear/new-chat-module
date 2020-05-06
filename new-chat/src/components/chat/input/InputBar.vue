@@ -66,6 +66,7 @@ export default {
   float: center;
   background-color: rgba(68, 240, 68, 0.795);
   border-radius: 5px;
+  vertical-align: bottom;
 }
 .send-button {
   width: 15%;
