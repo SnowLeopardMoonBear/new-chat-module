@@ -27,7 +27,7 @@ export default {
 .message-window{
     float: center;
     /* width: 50%; */
-    height: 93%;
+    height: 90%;
     background-color: #f8f6f6;
     border-radius: 10px;
     overflow-y: scroll;
