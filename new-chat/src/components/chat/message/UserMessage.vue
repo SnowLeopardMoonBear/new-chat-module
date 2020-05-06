@@ -1,9 +1,8 @@
 <template>
-<div>
-  <p id="user-message">
+<div class="message-line">
+  <p class="user-message">
     <span class="time">{{ msg.time}}</span> {{ msg.content }} 
   </p>
-  <div/>
 </div>
 </template>
 <script>
@@ -12,7 +11,7 @@ export default {
 };
 </script>
 <style scoped>
-#user-message {
+.user-message {
   color: rgb(85, 85, 85);
   float: right;
   background-color: rgb(143, 243, 129);
@@ -21,5 +20,8 @@ export default {
   margin-left: 5px;
   margin-right: 5px;
   padding: 3px;
+}
+.message-line{
+  width:100%;
 }
 </style>

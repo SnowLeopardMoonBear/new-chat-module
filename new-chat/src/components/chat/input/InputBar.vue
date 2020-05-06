@@ -2,6 +2,7 @@
   <div class="input-bar">
     <div class="message-input">
       <input
+        @keyup.enter="sendMessage()"
         class="input"
         type="text"
         v-model="inputText"

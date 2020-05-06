@@ -31,4 +31,7 @@ export default {
     border-radius: 10px;
     overflow-y: hidden;
 }
+.message-line{
+    width:100%;
+}
 </style>

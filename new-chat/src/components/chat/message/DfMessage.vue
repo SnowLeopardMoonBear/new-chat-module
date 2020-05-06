@@ -1,6 +1,6 @@
 <template>
-<div>
-  <p id="df-message">
+<div class="message-line">
+  <p class="df-message">
     {{ msg.content }} <span class="time">{{ msg.time }}</span>
   </p>
   <div/>
@@ -12,7 +12,7 @@ export default {
 };
 </script>
 <style scoped>
-#df-message {
+.df-message {
   color: rgb(85, 85, 85);
   float: left;
   border-radius: 5px;
