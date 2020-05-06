@@ -29,7 +29,7 @@ export default {
     height: 93%;
     background-color: #f8f6f6;
     border-radius: 10px;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 .message-line{
     width:100%;
