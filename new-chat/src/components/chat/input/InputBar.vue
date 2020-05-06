@@ -63,9 +63,11 @@ export default {
 .send-button {
   width: 15%;
   height: 6%;
+  margin-top: 1.25%;
+  margin-right: 1%;
   border-radius: 5px;
   font-size: 12px;
-  float: center;
+  float: right;
   font-weight: bolder;
   background-color: #6c9afd;
   color: white;
