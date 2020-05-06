@@ -1,5 +1,5 @@
 <template>
-<div class="message-window">
+<div class="message-window" id="message-window">
   <div
     v-for="(message, index) in feed"
     :key="index">
@@ -12,6 +12,7 @@
 <script>
 import UserMessage from './UserMessage.vue';
 import DfMessage from './DfMessage.vue';
+
 export default {
   components: {UserMessage, DfMessage},
   methods: {},

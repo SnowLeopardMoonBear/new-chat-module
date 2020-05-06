@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import { scrollToBottom } from './scroll.js';
 export default {
   methods: {
     getCurrentTime() {
@@ -35,6 +36,7 @@ export default {
           time: this.getCurrentTime(),
         });
         this.inputText = "";
+        scrollToBottom();
       }
     },
 
