@@ -76,9 +76,12 @@ export default {
   font-size: 12px;
   float: right;
   font-weight: bolder;
-  background-color: #6c9afd;
-  color: white;
+  background-color: #b7f803;
+  color: rgb(151, 150, 150);
   text-align: center;
+}
+.send-button:hover {
+  background-color: #f9fc3d;
 }
 .input {
   width: 80%;
