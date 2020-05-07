@@ -4,7 +4,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    text: {
+    newChat: {
       messageList: [
         {
           is_DF: true,
@@ -20,7 +20,7 @@ export const store = new Vuex.Store({
   },
   mutations: {
     pushMessage: function (state, Message) {
-      return state.text.messageList.push(Message);
+      return state.newChat.messageList.push(Message);
     }
   },
 });

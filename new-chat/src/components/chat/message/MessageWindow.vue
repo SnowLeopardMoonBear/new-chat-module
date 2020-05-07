@@ -18,7 +18,7 @@ export default {
   methods: {},
   data: function () {
       return {
-          feed: this.$store.state.text.messageList
+          feed: this.$store.state.newChat.messageList
       }
   },
 };
