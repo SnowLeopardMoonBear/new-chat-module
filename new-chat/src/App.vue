@@ -29,7 +29,7 @@ export default {
 #app {
   /* my code */
   float: center;
-  height: 500px;
+  height:50vh;
   background-color: #f8f6f6;
   border-radius: 10px;
 }
