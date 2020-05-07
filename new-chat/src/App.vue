@@ -19,6 +19,11 @@ export default {
 </script>
 
 <style>
+/* 지금 남아있는 문제점
+1. 클래스마다 특정 값이 지정되어있는데, 변수값으로 다이나믹하게 스타일을 바꾸는게 불가능
+2. 메시지 하나마다 DOM 줄바꿈이 안 됨
+3. style은 아니지만 메시지 송수신 로직이 구현 안됨
+ */
 .app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
