@@ -32,7 +32,4 @@ export default {
     border-radius: 10px;
     overflow-y: scroll;
 }
-.message-line{
-    width:100%;
-}
 </style>

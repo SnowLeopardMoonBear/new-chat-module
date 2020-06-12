@@ -1,9 +1,9 @@
 <template>
   <div class="message-line">
     <img class="kiwecon" src="../../../../public/kiwe_favicon.png" />
-    <p class="df-message">
+    <div class="df-message">
       {{ msg.content }} <span class="time">{{ msg.time }}</span>
-    </p>
+    </div>
     <div />
   </div>
 </template>
@@ -14,14 +14,18 @@ export default {
 </script>
 <style>
 .message-line {
-  /* width:100%; */
+  width:100%;
+  display: flex;
+  text-align:left;
+  vertical-align: middle;
 }
 .df-message {
   position: relative;
+  display: inline-block;
   color: rgb(85, 85, 85);
-  float: left;
   text-align: left;
-  width: 40%;
+  max-width: 40%;
+  word-break: keep-all;
   border-radius: 5px;
   background-color: rgb(255, 253, 112);
   margin-top: 5px;
@@ -39,10 +43,13 @@ export default {
   top: 5px;
   left: -10px;
 }
-.kiwecon{
-    width:5%;
-    height:5%;
-    margin:1%;
-    float:left;
+.kiwecon {
+  display: inline-block;
+  width: 5%;
+  height: 5%;
+  margin: 1%;
+}
+.time{
+  text-align:right;
 }
 </style>

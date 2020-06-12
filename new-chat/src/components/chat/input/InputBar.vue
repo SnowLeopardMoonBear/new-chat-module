@@ -22,8 +22,7 @@ export default {
       var d = new Date();
       var hours = d.getHours();
       var minutes = d.getMinutes();
-      return `${hours > 9 ? `${hours}` : `0${hours}`}시 
-      ${minutes > 9 ? `${minutes}` : `0${minutes}`}분`;
+      return `${hours > 9 ? `${hours}` : `0${hours}`}시${minutes > 9 ? `${minutes}` : `0${minutes}`}분`;
     },
     sendChime() {
       var chime = new Audio(require('../../../../public/chime.mp3'));
